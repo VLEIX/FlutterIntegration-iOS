@@ -14,6 +14,8 @@
 		11E5F9072B5D8A6700484F9D /* FlutterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E5F9062B5D8A6700484F9D /* FlutterIntegrationTests.swift */; };
 		11E5F9112B5D8A6800484F9D /* FlutterIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E5F9102B5D8A6800484F9D /* FlutterIntegrationUITests.swift */; };
 		11E5F9132B5D8A6800484F9D /* FlutterIntegrationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E5F9122B5D8A6800484F9D /* FlutterIntegrationUITestsLaunchTests.swift */; };
+		11E5F92A2B5D9ADB00484F9D /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E5F9282B5D9ADB00484F9D /* App.xcframework */; };
+		11E5F92B2B5D9ADB00484F9D /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E5F9292B5D9ADB00484F9D /* Flutter.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		11E5F90C2B5D8A6800484F9D /* FlutterIntegrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlutterIntegrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E5F9102B5D8A6800484F9D /* FlutterIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterIntegrationUITests.swift; sourceTree = "<group>"; };
 		11E5F9122B5D8A6800484F9D /* FlutterIntegrationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterIntegrationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11E5F9262B5D9AB900484F9D /* Release */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Release; path = Flutter/Release; sourceTree = "<group>"; };
+		11E5F9282B5D9ADB00484F9D /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/Release/App.xcframework; sourceTree = "<group>"; };
+		11E5F9292B5D9ADB00484F9D /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = Flutter/Release/Flutter.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E5F92A2B5D9ADB00484F9D /* App.xcframework in Frameworks */,
+				11E5F92B2B5D9ADB00484F9D /* Flutter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 				11E5F9052B5D8A6700484F9D /* FlutterIntegrationTests */,
 				11E5F90F2B5D8A6800484F9D /* FlutterIntegrationUITests */,
 				11E5F8F22B5D8A6600484F9D /* Products */,
+				11E5F91F2B5D8F6F00484F9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +135,16 @@
 				11E5F9122B5D8A6800484F9D /* FlutterIntegrationUITestsLaunchTests.swift */,
 			);
 			path = FlutterIntegrationUITests;
+			sourceTree = "<group>";
+		};
+		11E5F91F2B5D8F6F00484F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11E5F9282B5D9ADB00484F9D /* App.xcframework */,
+				11E5F9292B5D9ADB00484F9D /* Flutter.xcframework */,
+				11E5F9262B5D9AB900484F9D /* Release */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +441,7 @@
 				DEVELOPMENT_TEAM = Q2UYREQ7EU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/Release/";
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -445,6 +464,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/Release/";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,6 +481,7 @@
 				DEVELOPMENT_TEAM = Q2UYREQ7EU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/Release/";
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -483,6 +504,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Flutter/Release/";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
